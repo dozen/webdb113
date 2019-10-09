@@ -1,0 +1,16 @@
+[{
+  "Id": "web_instance_desired",
+  "Label": "service=prod:asg.web.instances.desired",
+  "MetricStat": {
+    "Metric": {
+      "Namespace": "AWS/AutoScaling",
+      "MetricName": "GroupDesiredCapacity",
+      "Dimensions": [{
+        "Name": "AutoScalingGroupName",
+        "Value": "web"
+      }]
+    },
+    "Period": 60,
+    "Stat": "Average"
+  }
+}]

@@ -1,0 +1,11 @@
+probes:
+  - service: dev
+    role: RDS
+    command:
+      graph_defs: true
+      command:
+        - mackerel-plugin-mysql
+        - '-tempfile=/var/tmp/rds-{{ .Host.ID }}'
+        - '-host={{ .Host.CustomIdentifier }}'
+        - '-username=root'
+        - '-password=root_password'

@@ -1,0 +1,7 @@
+post_probed_metrics: true
+probes:
+  - service: dev
+  role: EC2
+  ping:
+  address: '{{ .Host.IPAddresses.eth0 }}'
+  metric_key_prefix: custom.ping
