@@ -123,3 +123,11 @@ $ ./cw2mkr query.json
 ```
 
 Mackerelのコンソールから、メトリックが送信されていることを確認します。
+
+
+### ライブラリとして利用する
+cloudwatch-to-mackerel はライブラリとして利用することで、Lambda上で動かすといった使い方ができます。
+
+詳しくはcloudwatch-to-mackerelのREADMEを参照ください。
+
+fujiwara/cloudwatch-to-mackerel - Copy metrics from Amazon CloudWatch to Mackerel. https://github.com/fujiwara/cloudwatch-to-mackerel
